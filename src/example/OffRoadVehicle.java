@@ -1,10 +1,12 @@
 package example;
 
+import example.Strategy.DriveStrategy;
+import example.Strategy.SportsStrategy;
+
 public class OffRoadVehicle extends Vehicle{
-    @Override
-    public void drive(){
-        // this is same as sport drive capability
-        // this introduces code duplication
-        System.out.println("sport drive capability");
+
+    public OffRoadVehicle() {
+        super(new SportsStrategy());
     }
+
 }

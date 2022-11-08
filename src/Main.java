@@ -1,9 +1,12 @@
 import example.GoodsVehicle;
+import example.OffRoadVehicle;
+import example.SportVehicle;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
-        GoodsVehicle gv = new GoodsVehicle();
-        gv.drive();
+        SportVehicle bmw = new SportVehicle();
+        OffRoadVehicle gclass = new OffRoadVehicle();
+        bmw.drive();
+        gclass.drive();
     }
 }

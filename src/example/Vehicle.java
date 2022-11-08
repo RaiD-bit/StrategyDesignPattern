@@ -1,7 +1,13 @@
 package example;
 
+import example.Strategy.DriveStrategy;
+
 public class Vehicle {
+    DriveStrategy driveStrategy;
+    Vehicle(DriveStrategy driveStrategyobj){
+        this.driveStrategy = driveStrategyobj;
+    }
     public void drive(){
-        System.out.println("normal drive capability");
+        driveStrategy.drive();
     }
 }

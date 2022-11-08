@@ -1,8 +1,10 @@
 package example;
 
+import example.Strategy.DriveStrategy;
+import example.Strategy.GoodsStrategy;
+
 public class GoodsVehicle extends Vehicle{
-    @Override
-    public void drive(){
-        System.out.println("goods drive capability");
+    public GoodsVehicle() {
+        super(new GoodsStrategy());
     }
 }
